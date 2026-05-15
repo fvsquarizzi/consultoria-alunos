@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./data:/app/data:Z
+    stdin_open: true
+    tty: true
+
+  test:
+    build: .
+    command: python -m pytest test.py -v
