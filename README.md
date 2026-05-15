@@ -1,4 +1,4 @@
-# metas-aluno
+# consultoria-alunos
 
 Sistema de linha de comando para professores registrarem notas de alunos por bimestre e gerarem **metas de evolução** com base no histórico. As consultas analíticas (evolução percentual e projeção de meta) são feitas em **DuckDB**, e os dados ficam persistidos em **Parquet**.
 
@@ -14,7 +14,7 @@ Sistema de linha de comando para professores registrarem notas de alunos por bim
 ## Estrutura do projeto
 
 ```
-metas-aluno/
+consultoria-alunos/
 ├── main.py            # menu CLI, validacao de input e formatacao da saida
 ├── dados.py           # camada de persistencia (carregar / salvar / limpar)
 ├── test.py            # testes unitarios da camada de dados e das regras de meta
